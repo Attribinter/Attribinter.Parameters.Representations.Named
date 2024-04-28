@@ -12,12 +12,68 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9E1FB4AB-9A6E-45C9-B8E2-4EDCD509725A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attribinter.Parameters.Representations.Named.Core", "src\Attribinter.Parameters.Representations.Named.Core\Attribinter.Parameters.Representations.Named.Core.csproj", "{9E61CD27-F00D-4CC5-990F-E8581E47904C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attribinter.Parameters.Representations.Named.Abstractions", "src\Attribinter.Parameters.Representations.Named.Abstractions\Attribinter.Parameters.Representations.Named.Abstractions.csproj", "{14468D55-4D4D-4ADE-80E0-F5D7BB74991F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attribinter.Parameters.Representations.Named", "src\Attribinter.Parameters.Representations.Named\Attribinter.Parameters.Representations.Named.csproj", "{C55140CD-1CA0-47B4-8237-66B888F4D1A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attribinter.Parameters.Representations.Named.DependencyInjection", "src\Attribinter.Parameters.Representations.Named.DependencyInjection\Attribinter.Parameters.Representations.Named.DependencyInjection.csproj", "{2097F1BE-0D56-4472-AAF4-0514412590A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{414CE754-F298-4CB9-8DF3-3783B553CC49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration", "integration", "{3455CBD7-936D-48BF-A9D2-822F55724EA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attribinter.Parameters.Representations.Named.IntegrationTests", "tests\integration\Attribinter.Parameters.Representations.Named.IntegrationTests\Attribinter.Parameters.Representations.Named.IntegrationTests.csproj", "{FABEEB1F-E8F1-46CC-981C-2D5CA90FC491}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{45DC957B-5828-44D4-85A2-67C2EE3613D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attribinter.Parameters.Representations.Named.UnitTests", "tests\unit\Attribinter.Parameters.Representations.Named.UnitTests\Attribinter.Parameters.Representations.Named.UnitTests.csproj", "{4C8CF3B6-AF39-48D8-B8C0-0915CE8AD0CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E61CD27-F00D-4CC5-990F-E8581E47904C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E61CD27-F00D-4CC5-990F-E8581E47904C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E61CD27-F00D-4CC5-990F-E8581E47904C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E61CD27-F00D-4CC5-990F-E8581E47904C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14468D55-4D4D-4ADE-80E0-F5D7BB74991F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14468D55-4D4D-4ADE-80E0-F5D7BB74991F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14468D55-4D4D-4ADE-80E0-F5D7BB74991F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14468D55-4D4D-4ADE-80E0-F5D7BB74991F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C55140CD-1CA0-47B4-8237-66B888F4D1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55140CD-1CA0-47B4-8237-66B888F4D1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55140CD-1CA0-47B4-8237-66B888F4D1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55140CD-1CA0-47B4-8237-66B888F4D1A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2097F1BE-0D56-4472-AAF4-0514412590A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2097F1BE-0D56-4472-AAF4-0514412590A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2097F1BE-0D56-4472-AAF4-0514412590A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2097F1BE-0D56-4472-AAF4-0514412590A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABEEB1F-E8F1-46CC-981C-2D5CA90FC491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABEEB1F-E8F1-46CC-981C-2D5CA90FC491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABEEB1F-E8F1-46CC-981C-2D5CA90FC491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABEEB1F-E8F1-46CC-981C-2D5CA90FC491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C8CF3B6-AF39-48D8-B8C0-0915CE8AD0CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8CF3B6-AF39-48D8-B8C0-0915CE8AD0CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8CF3B6-AF39-48D8-B8C0-0915CE8AD0CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8CF3B6-AF39-48D8-B8C0-0915CE8AD0CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E61CD27-F00D-4CC5-990F-E8581E47904C} = {9E1FB4AB-9A6E-45C9-B8E2-4EDCD509725A}
+		{14468D55-4D4D-4ADE-80E0-F5D7BB74991F} = {9E1FB4AB-9A6E-45C9-B8E2-4EDCD509725A}
+		{C55140CD-1CA0-47B4-8237-66B888F4D1A4} = {9E1FB4AB-9A6E-45C9-B8E2-4EDCD509725A}
+		{2097F1BE-0D56-4472-AAF4-0514412590A4} = {9E1FB4AB-9A6E-45C9-B8E2-4EDCD509725A}
+		{3455CBD7-936D-48BF-A9D2-822F55724EA5} = {414CE754-F298-4CB9-8DF3-3783B553CC49}
+		{FABEEB1F-E8F1-46CC-981C-2D5CA90FC491} = {3455CBD7-936D-48BF-A9D2-822F55724EA5}
+		{45DC957B-5828-44D4-85A2-67C2EE3613D1} = {414CE754-F298-4CB9-8DF3-3783B553CC49}
+		{4C8CF3B6-AF39-48D8-B8C0-0915CE8AD0CB} = {45DC957B-5828-44D4-85A2-67C2EE3613D1}
 	EndGlobalSection
 EndGlobal
