@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{05EA1AA9-C956-4F85-A41B-6751E3EDB946}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		tests\.editorconfig = tests\.editorconfig
+		Directory.Build.props = Directory.Build.props
+		src\Directory.Build.props = src\Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Parameters.Representations.Named.Core", "src\Paraminter.Parameters.Representations.Named.Core\Paraminter.Parameters.Representations.Named.Core.csproj", "{089B5F13-7799-4C4D-A9E2-E99BFF1C3516}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Parameters.Representations.Named.Abstractions", "src\Paraminter.Parameters.Representations.Named.Abstractions\Paraminter.Parameters.Representations.Named.Abstractions.csproj", "{325F4A15-E704-4961-A9AF-1A822A48780C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Parameters.Representations.Named", "src\Paraminter.Parameters.Representations.Named\Paraminter.Parameters.Representations.Named.csproj", "{062799B8-F3C3-4B44-A29D-0D4D9679E24A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Parameters.Representations.Named.DependencyInjection", "src\Paraminter.Parameters.Representations.Named.DependencyInjection\Paraminter.Parameters.Representations.Named.DependencyInjection.csproj", "{5E25DDA7-EDD8-4DE6-ABE2-D0300EA2AAE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Parameters.Representations.Named.IntegrationTests", "tests\integration\Paraminter.Parameters.Representations.Named.IntegrationTests\Paraminter.Parameters.Representations.Named.IntegrationTests.csproj", "{D4A49485-EADD-46CE-8730-0C6079FB1898}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Parameters.Representations.Named.UnitTests", "tests\unit\Paraminter.Parameters.Representations.Named.UnitTests\Paraminter.Parameters.Representations.Named.UnitTests.csproj", "{7695CCD8-3ED3-4EDC-A1FB-530C976061B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{089B5F13-7799-4C4D-A9E2-E99BFF1C3516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089B5F13-7799-4C4D-A9E2-E99BFF1C3516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089B5F13-7799-4C4D-A9E2-E99BFF1C3516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089B5F13-7799-4C4D-A9E2-E99BFF1C3516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{325F4A15-E704-4961-A9AF-1A822A48780C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{325F4A15-E704-4961-A9AF-1A822A48780C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{325F4A15-E704-4961-A9AF-1A822A48780C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{325F4A15-E704-4961-A9AF-1A822A48780C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062799B8-F3C3-4B44-A29D-0D4D9679E24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062799B8-F3C3-4B44-A29D-0D4D9679E24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062799B8-F3C3-4B44-A29D-0D4D9679E24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062799B8-F3C3-4B44-A29D-0D4D9679E24A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E25DDA7-EDD8-4DE6-ABE2-D0300EA2AAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E25DDA7-EDD8-4DE6-ABE2-D0300EA2AAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E25DDA7-EDD8-4DE6-ABE2-D0300EA2AAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E25DDA7-EDD8-4DE6-ABE2-D0300EA2AAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A49485-EADD-46CE-8730-0C6079FB1898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A49485-EADD-46CE-8730-0C6079FB1898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A49485-EADD-46CE-8730-0C6079FB1898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A49485-EADD-46CE-8730-0C6079FB1898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7695CCD8-3ED3-4EDC-A1FB-530C976061B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7695CCD8-3ED3-4EDC-A1FB-530C976061B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7695CCD8-3ED3-4EDC-A1FB-530C976061B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7695CCD8-3ED3-4EDC-A1FB-530C976061B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76B9BF63-8FC2-4A27-881C-85AA7892A51E}
+	EndGlobalSection
+EndGlobal
