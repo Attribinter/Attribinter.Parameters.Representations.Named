@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 		src\Directory.Build.props = src\Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
+		tests\Directory.Build.props = tests\Directory.Build.props
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paraminter.Parameters.Representations.Named.Core", "src\Paraminter.Parameters.Representations.Named.Core\Paraminter.Parameters.Representations.Named.Core.csproj", "{089B5F13-7799-4C4D-A9E2-E99BFF1C3516}"
