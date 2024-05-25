@@ -8,7 +8,7 @@ public sealed class LoweringNamedParameterRepresentationFactory : IParameterRepr
     private readonly INamedParameterRepresentationFactory InnerFactory;
 
     /// <summary>Instantiates a <see cref="LoweringNamedParameterRepresentationFactory"/>, handling creation of <see cref="INamedParameterRepresentation"/> using <see cref="INamedParameter"/>.</summary>
-    /// <param name="innerFactory">Handles creation of <see cref="INamedParameterRepresentation"/> using the indices and names of type parameters.</param>
+    /// <param name="innerFactory">Handles creation of <see cref="INamedParameterRepresentation"/>.</param>
     public LoweringNamedParameterRepresentationFactory(INamedParameterRepresentationFactory innerFactory)
     {
         InnerFactory = innerFactory ?? throw new ArgumentNullException(nameof(innerFactory));
