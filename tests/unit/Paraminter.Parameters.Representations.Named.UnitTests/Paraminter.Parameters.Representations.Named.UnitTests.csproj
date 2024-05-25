@@ -11,15 +11,13 @@
 
         <PackageReference Include="Moq" />
 
-        <PackageReference Include="Paraminter.Tests.Common" />
-
         <PackageReference Include="xunit" />
         <PackageReference Include="xunit.runner.visualstudio" />
 
         <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Representations.Named.Abstractions\Paraminter.Parameters.Representations.Named.Abstractions.csproj" />
         <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Representations.Named.Core\Paraminter.Parameters.Representations.Named.Core.csproj" />
-        <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Representations.Named\Paraminter.Parameters.Representations.Named.csproj" />
         <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Representations.Named.DependencyInjection\Paraminter.Parameters.Representations.Named.DependencyInjection.csproj" />
+        <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Representations.Named\Paraminter.Parameters.Representations.Named.csproj" />
     </ItemGroup>
 
 </Project>
