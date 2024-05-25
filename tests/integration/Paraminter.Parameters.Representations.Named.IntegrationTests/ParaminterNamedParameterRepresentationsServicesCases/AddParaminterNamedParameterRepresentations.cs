@@ -3,32 +3,10 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using Moq;
-
-using System;
-
 using Xunit;
 
 public sealed class AddParaminterNamedParameterRepresentations
 {
-    [Fact]
-    public void NullServiceCollection_ArgumentNullException()
-    {
-        var result = Record.Exception(() => Target(null!));
-
-        Assert.IsType<ArgumentNullException>(result);
-    }
-
-    [Fact]
-    public void ValidServiceCollection_ReturnsSameServiceCollection()
-    {
-        var services = Mock.Of<IServiceCollection>();
-
-        var result = Target(services);
-
-        Assert.Same(services, result);
-    }
-
     [Fact]
     public void INamedParameterRepresentationEqualityComparerFactory_ServiceCanBeResolved() => ServiceCanBeResolved<INamedParameterRepresentationEqualityComparerFactory>();
 
@@ -38,7 +16,7 @@ public sealed class AddParaminterNamedParameterRepresentations
     [Fact]
     public void IParameterRepresentationFactory_ServiceCanBeResolved() => ServiceCanBeResolved<IParameterRepresentationFactory<INamedParameter, INamedParameterRepresentation>>();
 
-    private static IServiceCollection Target(IServiceCollection services) => ParaminterNamedParameterRepresentationsServices.AddParaminterNamedParameterRepresentations(services);
+    private static void Target(IServiceCollection services) => ParaminterNamedParameterRepresentationsServices.AddParaminterNamedParameterRepresentations(services);
 
     [AssertionMethod]
     private static void ServiceCanBeResolved<TService>()

@@ -9,8 +9,6 @@ using Xunit;
 
 public sealed class Create
 {
-    private IEqualityComparer<INamedParameterRepresentation> Target(IEqualityComparer<string> nameComparer) => Fixture.Sut.Create(nameComparer);
-
     private readonly IFactoryFixture Fixture = FactoryFixtureFactory.Create();
 
     [Fact]
@@ -28,4 +26,6 @@ public sealed class Create
 
         Assert.NotNull(result);
     }
+
+    private IEqualityComparer<INamedParameterRepresentation> Target(IEqualityComparer<string> nameComparer) => Fixture.Sut.Create(nameComparer);
 }
