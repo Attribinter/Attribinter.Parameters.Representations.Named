@@ -2,7 +2,8 @@
 
 internal static class RepresentationFixtureFactory
 {
-    public static IRepresentationFixture Create(string name)
+    public static IRepresentationFixture Create(
+        string name)
     {
         INamedParameterRepresentationFactory factory = new NamedParameterRepresentationFactory();
 
@@ -11,11 +12,13 @@ internal static class RepresentationFixtureFactory
         return new RepresentationFixture(sut);
     }
 
-    private sealed class RepresentationFixture : IRepresentationFixture
+    private sealed class RepresentationFixture
+        : IRepresentationFixture
     {
         private readonly INamedParameterRepresentation Sut;
 
-        public RepresentationFixture(INamedParameterRepresentation sut)
+        public RepresentationFixture(
+            INamedParameterRepresentation sut)
         {
             Sut = sut;
         }
