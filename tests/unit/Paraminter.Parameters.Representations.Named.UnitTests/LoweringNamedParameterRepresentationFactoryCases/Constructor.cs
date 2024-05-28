@@ -24,5 +24,9 @@ public sealed class Constructor
         Assert.NotNull(result);
     }
 
-    private static LoweringNamedParameterRepresentationFactory Target(INamedParameterRepresentationFactory innerFactory) => new(innerFactory);
+    private static LoweringNamedParameterRepresentationFactory Target(
+        INamedParameterRepresentationFactory innerFactory)
+    {
+        return new LoweringNamedParameterRepresentationFactory(innerFactory);
+    }
 }

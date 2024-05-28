@@ -3,18 +3,21 @@
 using System;
 
 /// <summary>Handles creation of <see cref="INamedParameterRepresentation"/> using <see cref="INamedParameter"/>.</summary>
-public sealed class LoweringNamedParameterRepresentationFactory : IParameterRepresentationFactory<INamedParameter, INamedParameterRepresentation>
+public sealed class LoweringNamedParameterRepresentationFactory
+    : IParameterRepresentationFactory<INamedParameter, INamedParameterRepresentation>
 {
     private readonly INamedParameterRepresentationFactory InnerFactory;
 
     /// <summary>Instantiates a <see cref="LoweringNamedParameterRepresentationFactory"/>, handling creation of <see cref="INamedParameterRepresentation"/> using <see cref="INamedParameter"/>.</summary>
     /// <param name="innerFactory">Handles creation of <see cref="INamedParameterRepresentation"/>.</param>
-    public LoweringNamedParameterRepresentationFactory(INamedParameterRepresentationFactory innerFactory)
+    public LoweringNamedParameterRepresentationFactory(
+        INamedParameterRepresentationFactory innerFactory)
     {
         InnerFactory = innerFactory ?? throw new ArgumentNullException(nameof(innerFactory));
     }
 
-    INamedParameterRepresentation IParameterRepresentationFactory<INamedParameter, INamedParameterRepresentation>.Create(INamedParameter parameter)
+    INamedParameterRepresentation IParameterRepresentationFactory<INamedParameter, INamedParameterRepresentation>.Create(
+        INamedParameter parameter)
     {
         if (parameter is null)
         {
