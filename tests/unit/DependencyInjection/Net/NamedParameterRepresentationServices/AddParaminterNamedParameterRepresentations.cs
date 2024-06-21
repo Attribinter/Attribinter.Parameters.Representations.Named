@@ -11,7 +11,7 @@ using Xunit;
 public sealed class AddParaminterNamedParameterRepresentations
 {
     [Fact]
-    public void NullServiceCollection_ArgumentNullException()
+    public void NullServiceCollection_ThrowsArgumentNullException()
     {
         var result = Record.Exception(() => Target(null!));
 
