@@ -13,8 +13,8 @@
         <PackageVersion Include="Moq" Version="4.20.70" />
 
         <PackageVersion Include="Paraminter.Logo" Version="2.0.0-alpha.10" />
-        <PackageVersion Include="Paraminter.Parameters.Representations.Abstractions" Version="8.0.0-alpha.13" />
-        <PackageVersion Include="Paraminter.Parameters.Named.Core" Version="8.0.0-alpha.4" />
+        <PackageVersion Include="Paraminter.Parameters.Representations.Abstractions" Version="8.0.0-alpha.24" />
+        <PackageVersion Include="Paraminter.Parameters.Named.Core" Version="8.0.0-alpha.21" />
 
         <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.16.0.82469" />
 
