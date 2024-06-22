@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <AssemblyName>Paraminter.Parameters.Representations.Named.DI.Net</AssemblyName>
+
         <PackageId>Paraminter.Parameters.Representations.Named.DI.Net</PackageId>
         <Description>Allows the services provided by Paraminter.Parameters.Representations.Named to be registered with .NET DI-containers.</Description>
     </PropertyGroup>
