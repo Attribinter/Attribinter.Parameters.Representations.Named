@@ -4,7 +4,7 @@
         <AssemblyName>Paraminter.Parameters.Representations.Named</AssemblyName>
 
         <PackageId>Paraminter.Parameters.Representations.Named</PackageId>
-        <Description>Provides components related to Paraminter named parameter representations.</Description>
+        <Description>Provides general implementations of services related to Paraminter named parameter representations.</Description>
     </PropertyGroup>
 
     <ItemGroup>
