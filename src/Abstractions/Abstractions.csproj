@@ -4,7 +4,7 @@
         <AssemblyName>Paraminter.Parameters.Representations.Named.Abstractions</AssemblyName>
 
         <PackageId>Paraminter.Parameters.Representations.Named.Abstractions</PackageId>
-        <Description>Provides abstractions related to Paraminter named parameter representations.</Description>
+        <Description>Provides abstractions of services related to Paraminter named parameter representations.</Description>
     </PropertyGroup>
 
     <ItemGroup>
