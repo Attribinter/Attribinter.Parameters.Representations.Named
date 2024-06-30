@@ -9,7 +9,7 @@ public sealed class GetNamedParameterRepresentationQueryHandler
     private readonly IQueryHandler<IGetNamedParameterRepresentationByNameQuery, INamedParameterRepresentation> ByNameQueryHandler;
 
     /// <summary>Instantiates a <see cref="GetNamedParameterRepresentationQueryHandler"/>, handling <see cref="IGetParameterRepresentationQuery{TParameter}"/>.</summary>
-    /// <param name="byNameQueryHandler">Handles creation of <see cref="INamedParameterRepresentation"/>.</param>
+    /// <param name="byNameQueryHandler">Handles <see cref="IGetNamedParameterRepresentationByNameQuery"/>, and responds with <see cref="INamedParameterRepresentation"/>.</param>
     public GetNamedParameterRepresentationQueryHandler(
         IQueryHandler<IGetNamedParameterRepresentationByNameQuery, INamedParameterRepresentation> byNameQueryHandler)
     {
