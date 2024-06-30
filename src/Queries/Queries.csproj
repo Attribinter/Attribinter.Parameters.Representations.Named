@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Paraminter.Parameters.Representations.Named.Queries</AssemblyName>
+
+        <PackageId>Paraminter.Parameters.Representations.Named.Queries</PackageId>
+        <Description>Provides queries related to Paraminter named parameter representations.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Paraminter.Parameters.Representations.Queries" />
+    </ItemGroup>
+
+</Project>
